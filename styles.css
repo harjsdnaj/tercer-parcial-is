@@ -70,6 +70,9 @@ line-height:1.5em;
     --peach-96: #F7F6F3;
     --peach-95: #F5F3F0;
     --purple-50: #5700FF;
+    --color-linkedin: #0A66C2; 
+    --color-twitter: #1DA1F2;
+    --color-dribbble: #EA4C89;
 
 }
 
@@ -1045,10 +1048,6 @@ position: absolute;
     .section-header h2 {
     font-size: 2rem;
     }
-    
-    --color-linkedin: #0A66C2; 
-    --color-twitter: #1DA1F2;
-    --color-dribbble: #EA4C89;
 }
 
 /* --- 1. Navbar --- */
@@ -1720,6 +1719,7 @@ position: absolute;
 
 .cta-button {
     display: inline-block;
+    justify-content: center;
     background-color: var(--purple-50);
     color: white;
     text-decoration: none;
@@ -2276,4 +2276,5 @@ position: absolute;
     .contacts{
         display: none;
     }
+}
 }

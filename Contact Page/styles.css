@@ -1,4 +1,4 @@
-/* Variables CSS para colores y fuentes */
+
 :root {
     --font-primary: 'Manrope', 'Inter', -apple-system, sans-serif;
     --color-background-body: #efe9e3;
@@ -13,7 +13,7 @@
     --color-border-light: #d8d5d0;
 }
 
-/* Reset básico y estilos generales */
+
 * {
     box-sizing: border-box;
 }
@@ -32,14 +32,14 @@ img {
     display: block;
 }
 
-/* ------------------- SECCIÓN DE CONTACTO ------------------- */
+
 .contact-section {
     max-width: 1400px;
     margin: 60px auto;
     padding: 0 20px;
 }
 
-/* Encabezado de la sección */
+
 .contact-header {
     text-align: center;
     margin-bottom: 0;
@@ -71,7 +71,7 @@ img {
     margin-bottom: 35px;
 }
 
-/* Beneficios/Insignias (24/7 Assistance, etc.) */
+
 .service-benefits {
     display: flex;
     justify-content: center;
@@ -99,7 +99,18 @@ img {
     font-weight: 500;
 }
 
-/* ------------------- CONTENEDOR PRINCIPAL DE LAS DOS COLUMNAS ------------------- */
+.My-social-profiles h3 {
+    text-decoration: none;
+    font-weight: var(--color-text-medium);
+    margin-bottom: 0px;
+}
+
+.social-profiles-card{
+    width: 224px;
+    margin: 0;
+    padding: 1px;
+}
+
 .contact-content-container {
     display: grid;
     grid-template-columns: 420px 1fr;
@@ -110,7 +121,7 @@ img {
     align-items: start;
 }
 
-/* ------------------- COLUMNA IZQUIERDA: Información de contacto ------------------- */
+
 .contact-info-column {
     display: flex;
     flex-direction: column;
@@ -175,7 +186,6 @@ img {
     height: 14px;
 }
 
-/* Tarjeta de perfiles sociales */
 .social-profiles-card {
     background-color: var(--color-card-background);
     padding: 24px;
@@ -219,7 +229,7 @@ img {
     height: 20px;
 }
 
-/* ------------------- COLUMNA DERECHA: Formulario de contacto ------------------- */
+
 .contact-form-column {
     background-color: var(--color-card-background);
     padding: 45px;
@@ -354,7 +364,6 @@ button[type="submit"]:active {
     transform: translateY(0);
 }
 
-/* Variables CSS para la sección FAQ */
 :root {
     --font-primary: 'Manrope', 'Inter', -apple-system, sans-serif;
     --color-background-body: #efe9e3;
@@ -367,7 +376,7 @@ button[type="submit"]:active {
     --color-white: #ffffff;
 }
 
-/* Reset básico */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -381,14 +390,13 @@ body {
     line-height: 1.6;
 }
 
-/* ------------------- SECCIÓN FAQ ------------------- */
+
 .faq-section {
     max-width: 1400px;
     margin: 80px auto;
     padding: 0 60px;
 }
 
-/* Header del FAQ */
 .faq-header {
     text-align: center;
     margin-bottom: 60px;
@@ -408,7 +416,7 @@ body {
     font-weight: 400;
 }
 
-/* Contenedor principal con dos columnas */
+
 .faq-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
