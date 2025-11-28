@@ -13,10 +13,58 @@
     --color-border-light: #d8d5d0;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 1px solid var(--color-border-light);
+    background-color: var(--color-background);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary); 
+}
+
+.navbar nav a {
+    color: var(--color-text-dark); 
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: var(--color-primary);
+}
+
+.btn-primary {
+    background-color:#5801ff;
+    color: white !important; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(140, 71, 246, 0.3); 
+}
+
+.btn-primary i {
+    color: #5801ff;
+}
 
 * {
     box-sizing: border-box;
 }
+
 
 body {
     margin: 0;
@@ -39,22 +87,28 @@ img {
     padding: 0 20px;
 }
 
+.contact-top-section {
+    background-color: var(--color-white);
+    border-radius: 24px;
+    padding-bottom: 50px;
+}
 
+/* Header del contacto */
 .contact-header {
     text-align: center;
-    margin-bottom: 0;
     padding: 60px 40px 50px;
-    background-color: var(--color-card-background);
-    border-radius: 24px 24px 0 0;
+    background-color: transparent;
+    border-radius: 0;
 }
 
 .contact-header > img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     margin: 0 auto 30px;
     background-color: var(--color-purple-main);
     border-radius: 12px;
-    padding: 18px;
+    padding: 0;
+    object-fit: cover;
 }
 
 .contact-header h1 {
@@ -70,7 +124,6 @@ img {
     color: var(--color-text-medium);
     margin-bottom: 35px;
 }
-
 
 .service-benefits {
     display: flex;
@@ -182,9 +235,10 @@ img {
 }
 
 .arrow-link img {
-    width: 14px;
-    height: 14px;
+    width: 40px;
+    height: 40px;
 }
+
 
 .social-profiles-card {
     background-color: var(--color-card-background);
@@ -310,10 +364,33 @@ img {
 
 .contact-reason-options input[type="radio"] {
     margin-right: 10px;
-    accent-color: var(--color-purple-main);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     width: 16px;
     height: 16px;
+    border: 2px solid #d8d5d0;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
+
+.contact-reason-options input[type="radio"]:checked {
+    background-color: var(--color-purple-main);
+    border-color: var(--color-purple-main);
+}
+
+.contact-reason-options input[type="radio"]:checked::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-purple-main);
+    border-radius: 1px;
+    margin: 3px;
+}
+
 
 textarea {
     width: 100%;
